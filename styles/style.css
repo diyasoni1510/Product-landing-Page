@@ -1,0 +1,491 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    width: 100vw;
+    box-sizing: border-box;
+    font-family: 'Kanit' , sans-serif;
+    font-size: 16px;
+    /* background: #fafaeb; */
+    /* background: grey; */
+    background: rgb(239, 246, 248);
+    /* background: blue; */
+}
+header{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    /* overflow-x: hidden; */
+
+}
+header #logo{
+    width: 50%;
+    /* display:none; */
+    text-align: center;
+}
+header #logo h1{
+    font-size: 2rem;
+    opacity: 0.5;
+}
+header #navbar{
+    width: 50%;
+    /* display: none; */
+}
+header #navbar ul{
+    display: flex;
+    float: right;
+    margin-right: 4rem;
+}
+header #navbar ul li{
+    list-style: none;
+}
+header #navbar ul li a{
+    text-decoration: none;
+    color: #000;
+    /* border: 2px solid red; */
+    margin: 0 1.5rem ;
+    padding:0.2rem 0.5rem;
+    text-transform: uppercase;
+}
+header #navbar ul li a i{
+    font-size:1.5rem;
+}
+@media (max-width:1065px) {
+    header #navbar ul li a{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:990px) {
+    header #navbar{
+        width: 60%;
+    }
+    header #logo{
+        width: 40%;
+    }
+}
+@media (max-width:825px) {
+    header #navbar ul li a i{
+        font-size:1rem;
+    }
+}
+@media (max-width:880px) {
+    header #navbar ul li a{
+        margin: 0 1rem;
+    }
+}
+@media (max-width:700px) {
+    header #navbar{
+        display: none;
+    }
+}
+header #menu{
+    display: none;
+}
+/* **************************************front-page*************************** */
+#front-page{
+    width: 100vw;
+    /* border: 2px solid black; */
+    display: flex;
+}
+#front-text{
+    width: 50%;
+    /* border: 2px solid red; */
+    background: #232323;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+}
+#front-text h1{
+    /* font-size: 3rem; */
+    font-size: 300%;
+    width: 70%;
+    line-height: 2.5rem;
+}
+#front-text p{
+    /* font-size: 1.5rem; */
+    width: 70%;
+    margin-top: 1rem;
+}
+#front-text a{
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    box-shadow: 2px 2px 2px  #fff;
+    margin-top: 1rem;
+    position: relative;
+    right: 25%;
+    transition: all 1s;
+}
+#front-text a:hover{
+    color: #000;
+    background: #fff;
+    box-shadow: none;
+}
+.black-a{
+    color: #fff;
+    /* background: #fff; */
+    border: 2px solid #fff;
+}
+.white-a{
+    color: #fff;
+    background: #000;
+}
+#front-text img{
+    display: none;
+}
+#front-image{
+    width: 50%;
+    position: relative;
+    /* right: 5%; */
+    background: #fff;
+}
+#front-image img{
+    width: 600px;
+    /* width: 100%; */
+    position: relative;
+    /* right:15% */
+}
+@media (max-width:1150px) {
+    #front-image img{
+        width: 500px;
+        /* width: 40%; */
+    }
+}
+@media (max-width:900px) {
+    #front-image img{
+        width: 400px;
+        /* width: 40%; */
+    }
+    #front-text h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width:885px) {
+    #front-text{
+        width: 60%;
+    }
+    #front-image img{
+        position: relative;
+        right: 10%;
+    }
+}
+@media (max-width:835px) {
+    #front-image img{
+        width: 400px;
+    }
+    #front-text h1,#front-text p{
+        width: 80%;
+    }
+}
+@media (max-width:765px) {
+    #front-text h1,#front-text p{
+        width: 90%;
+    }
+}
+@media (max-width:620px) {
+    #front-text h1,#front-text p{
+        width: 100%;
+    }
+}
+@media (max-width:650px) {
+    #front-image img{
+        right: 20%;
+    }
+}
+@media (max-width:560px) {
+    #front-image{
+        display: none;
+    }
+    #front-text{
+        width: 100%;
+    }
+    #front-text img{
+        display: block;
+    }
+}
+/* *********************************sec2******************************* */
+#sec2{
+    /* border: 2px solid red; */
+    width: 100vw;
+    margin-top: 8rem;
+    /* margin-bottom: 2rem; */
+    display: flex;
+}
+#sec2-image{
+    width: 50%;
+}
+#sec2-image img{
+    z-index: 100;
+    position: relative;
+    top: -10%;
+    /* background: #fafaeb; */
+    /* border: 2px solid red; */
+    width: 100%;
+    transform: rotate(-60deg);
+}
+#sec2-text{
+    /* z-index: 100; */
+    /* position: relative; */
+    /* top: 10%; */
+    padding: 2rem;
+    width: 50%;
+    height: 40%;
+    background: #fff;
+}
+#sec2-text h1{
+    position: relative;
+    font-size: 3rem;
+    /* width: 80%; */
+    word-spacing: 1rem;
+    /* border: 2px solid black; */
+    font-family: 'Dancing Script', cursive;
+/* font-family: 'Great Vibes', cursive; */
+}
+#sec2-text p{
+    width: 80%;
+    position: relative;
+    left: 20%;
+    line-height: 2rem;
+}
+#sec2-text a{
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    box-shadow: 2px 2px 2px 2px #000;
+    margin-top: 4rem;
+    position: relative;
+    top: 10%;
+    color: #000;
+    /* right: 25%; */
+    transition: all 1s;
+}
+#sec2-text a:hover{
+    color: #000;
+    background: #fff;
+    box-shadow: none;
+}
+@media (max-width:920px) {
+    #sec2-image img{
+        width: 600px;
+    }
+}
+@media (max-width:560px) {
+    #sec2-image{
+        display: none;
+    }
+    #sec2-text{
+        width: 100%;
+    }
+}
+/* @media (max-width:765px) {
+    #sec2-text{
+        padding: 1rem;
+    }
+} */
+/* ************************************products********************** */
+#products{
+    /* border: 2px solid red; */
+    margin-bottom: 3rem ;
+    width: 100vw;
+    /* height: 550px; */
+    /* overflow: hidden; */
+    display: flex;
+    background: #fff;
+}
+#product-text{
+    width: 70%;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+#earphone{
+    background-image: url("../images/earphone-removebg-preview.png");
+    background-repeat: no-repeat;
+}
+#earphone h1,#earphone p,#earphone a{
+    padding: 0.5rem 1rem;
+    background: #fff;
+    position: relative;
+    top: 40%;
+}
+#earphone a{
+    top: 42%;
+}
+
+#headphone{
+    position: relative;
+    /* right: 10%; */
+    background-image: url("../images/whiteheadpphone-removebg-preview.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+}
+#headphone h1,#headphone p,#headphone a{
+    padding: 0.5rem 1rem;
+    background: #fff;
+    position: relative;
+    top: 65%;
+}
+#headphone a{
+    top: 67%;
+}
+#product-text a{
+    text-decoration: none;
+    color: #000;
+    box-shadow: 2px 2px 2px 2px #000;
+    /* position: relative; */
+    /* top: 45%; */
+    margin:1rem;
+    transition: all 1s;
+}
+#product-text a:hover{
+    color: #fff;
+    background: #232323;
+    box-shadow: none;
+}
+#product-image{
+    /* border: 2px solid red; */
+    width: 30%;
+}
+@media (max-width:790px) {
+    #product-text{
+        flex-wrap: wrap;
+    }
+    #earphone,#headphone{
+        width: 100%;
+    }
+}
+/* **********************************sec3***************************** */
+#sec3{
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #232323;
+    color: #fff;
+}
+#sec3-image{
+    width: 50%;
+}
+#sec3-image img{
+    position: relative;
+    top: 0.4rem;
+}
+#sec3-text{
+    width: 50%;
+}
+#sec3-text h1{
+    font-size: 3rem;
+    /* width: 60%; */
+    /* line-height: 2.5rem; */
+}
+#sec3-text p{
+    width: 80%;
+    margin: 1rem 0;
+}
+#sec3-text a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    position: relative;
+    top: 15%;
+    /* margin-left: 2rem; */
+    box-shadow: 2px 2px 2px 2px #fff;
+}
+/* ********************************sec4*********************** */
+#sec4{
+    display: flex;
+    margin: 8rem 0;
+}
+#ratings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    width: 50%;
+    background: #232323;
+    color: #fff;
+}
+#ratings img{
+    background: #fff;
+}
+#ratings-sec1,#ratings-sec2,#ratings-sec3,#ratings-sec4{
+    /* margin: 0 2rem; */
+    width: 40%;
+    /* border: 2px solid #fff; */
+}
+#morecolors-sec1,#morecolors-sec2,#morecolors-sec3,#morecolors-sec4{
+    /* margin: 0 2rem; */
+    width: 40%;
+    /* border: 2px solid #fff; */
+}
+#morecolors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    width: 50%;
+    background: #fff;
+    color: #000;
+}
+#morecolors img{
+    background: #232323;
+    padding: 0.2rem;
+}
+#sec4 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#ratings h1,#morecolors h1{
+    font-size: 2.5rem;
+}
+#ratings a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    padding: 0.2rem 0.5rem;
+    box-shadow: 2px 2px 2px 2px #fff;
+}
+#morecolors a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    padding: 0.2rem 0.5rem;
+    box-shadow: 2px 2px 2px 2px #000;
+}
+#morecolors-sec4 p{
+    margin-bottom: 1rem;
+}
+footer{
+    width: 100vw;
+    background: #232323;
+    color: #fff;
+    margin-top:5rem;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+footer p{
+    /* border: 2px solid #fff; */
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+
+}
